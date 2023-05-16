@@ -21,7 +21,7 @@ const Home: NextPage = () => {
   const [userTickets, setUserTickets] = useState(0);
   const [quantity, setQuantity] = useState<number>(1);
   const { contract, isLoading } = useContract(
-    "0x118D8dd080b215c7443aF016Be63496ebb3E37f1"
+    ""
   );
 
   const { data: remainingTickets } = useContractRead(
@@ -226,7 +226,7 @@ const Home: NextPage = () => {
                     ethers.utils.formatEther(ticketPrice.toString())}{" "}
                   MATIC
                 </p>
-              </div>
+              //</div>
               <div className="flex text-white items-center space-x-2 bg-[#091B18] border-[#004337] p-4 ">
                 <p>TICKETS</p>
                 <input
