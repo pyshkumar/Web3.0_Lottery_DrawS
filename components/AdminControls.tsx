@@ -16,7 +16,7 @@ import { on } from "stream";
 
 function AdminControls() {
   const { contract } = useContract(
-    "0x118D8dd080b215c7443aF016Be63496ebb3E37f1"
+    ""
   );
 
   const { data: totalCommisison } = useContractRead(
