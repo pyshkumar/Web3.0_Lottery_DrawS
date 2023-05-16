@@ -11,7 +11,7 @@ type Props = {
 
 function CountdownTimer() {
   const { contract } = useContract(
-    "0x118D8dd080b215c7443aF016Be63496ebb3E37f1"
+    ""
   );
   const { data: expiration } = useContractRead(contract, "expiration");
 
